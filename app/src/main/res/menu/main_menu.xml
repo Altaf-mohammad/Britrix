@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+
+<item n1:title="Rate us" xmlns:n2="http://schemas.android.com/apk/res-auto" xmlns:n1="http://schemas.android.com/apk/res/android" n2:showAsAction="always" n1:id="@id/action_rate" n1:icon="@drawable/star"/>
+
+<item n3:title="About us" n4:showAsAction="never" n3:id="@id/action_about" xmlns:n4="http://schemas.android.com/apk/res-auto" xmlns:n3="http://schemas.android.com/apk/res/android"/>
+
+<item n5:title="Creators Info" n6:showAsAction="never" n5:id="@id/action_info" xmlns:n6="http://schemas.android.com/apk/res-auto" xmlns:n5="http://schemas.android.com/apk/res/android"/>
+
+</menu>
