@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BegSubs">
+        <item>Mathematics - I</item>
+        <item>Mathematics -II</item>
+        <item>Mathematics -III</item>
+        <item>Applied Physics</item>
+        <item>Engineering Physics</item>
+        <item>Engineering Drawing</item>
+        <item>Applied Chemistry</item>
+        <item>Phisical Pharmacy</item>
+    </string-array>
+    <string-array name="CivilSubs">
+        <item>Probability and Statistics</item>
+        <item>Basic Electrical and Electronics Engineering</item>
+        <item>Strength of Materials</item>
+        <item>Building Materials and Construction</item>
+        <item>Surveying</item>
+        <item>Fluid Mechanics</item>
+        <item>Building Planning and Drawing</item>
+        <item>Strength of Materials-2</item>
+        <item>Concrete Technology</item>
+        <item>Structural Analysis</item>
+        <item>Transportation Engineering</item>
+    </string-array>
+    <string-array name="CseSubs">
+        <item>Statistics with R Programming</item>
+        <item>Mathematical Foundations of Computer Science</item>
+        <item>Digital Logic Design</item>
+        <item>Python Programming</item>
+        <item>Data Structures through C++</item>
+        <item>Computer Graphics</item>
+        <item>Software Engineering</item>
+        <item>Java Programming</item>
+        <item>Advanced Data Structures</item>
+        <item>Computer Organization</item>
+        <item>Formal Languages and Automata Theory</item>
+        <item>Principles of Programming Languages</item>
+        <item>Compiler Design</item>
+        <item>Unix Programming</item>
+        <item>Object Oriented Analysis and Design using UML</item>
+        <item>Database Management Systems</item>
+        <item>Operating Systems</item>
+        <item>Computer Networks</item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Software Testing Methodologies</item>
+        <item>Artificial Intelligence</item>
+        <item>Data Warehousing and Mining</item>
+        <item>Cyber Security</item>
+        <item>Digital Signal Processing</item>
+        <item>Internet of Things</item>
+        <item>Cloud Computing</item>
+        <item>Web Technologies</item>
+        <item>Software Architecture and Design Patterns</item>
+        <item>Big Data Analytics</item>
+        <item>Mobile Computing</item>
+        <item>Distributed Systems</item>
+        <item>Machine Learning</item>
+    </string-array>
+    <string-array name="EceSubs">
+        <item>Electronic Devices and Circuits</item>
+        <item>Switching Theory and Logic Design</item>
+        <item>Signals and Systems</item>
+        <item>Network Analysis</item>
+        <item>Random Variables and Stochastic Processes</item>
+        <item>Managerial Economics and Financial Analysis</item>
+        <item>Electronic Circuit Analysis</item>
+        <item>Control Systems</item>
+        <item>Electromagnetic Waves and Transmission Lines</item>
+        <item>Analog Communications</item>
+        <item>Pulse and Digital Circuits</item>
+        <item>Management Science</item>
+        <item>Computer Architecture and Organization</item>
+        <item>Linear IC Applications</item>
+        <item>Digital IC Applications</item>
+        <item>Digital Communications</item>
+        <item>Antenna and Wave Propagation</item>
+        <item>Micro Processors and Micro Controllers</item>
+        <item>Micro Wave Engineering</item>
+        <item>VLSI Design</item>
+        <item>Digital Signal Processing</item>
+        <item>OOPs through Java</item>
+        <item>Data Mining</item>
+        <item>Industrial Robotics</item>
+        <item>Radar Systems</item>
+        <item>Digital Image Processing</item>
+        <item>Computer Networks</item>
+        <item>Optical Communications</item>
+        <item>TV Engineering</item>
+        <item>Electronic Switching Systems</item>
+        <item>Embedded Systems</item>
+        <item>Analog IC Design</item>
+        <item>Network Security and Cryptography</item>
+        <item>Cellular Mobile Communications</item>
+        <item>Electronic Measurements and Instrumentation</item>
+        <item>Satellite Communications</item>
+        <item>Wireless sensors and Networks</item>
+        <item>Digital IC Design</item>
+        <item>Operating Systems</item>
+    </string-array>
+    <string-array name="EeeSubs">
+        <item>Electrical Circuit Analysis</item>
+        <item>Electrical Machines</item>
+        <item>Basic Electronics and Devices</item>
+        <item>Electro Magnetic Fields</item>
+        <item>Electrical Measurements</item>
+        <item>Switching Theory and Logic Design</item>
+        <item>Management Science</item>
+        <item>Electrical Machines</item>
+        <item>Power Systems</item>
+        <item>Power Systems-II</item>
+        <item>Signals and Systems</item>
+        <item>Pulse and Digital Circuits</item>
+        <item>Power Electronics</item>
+        <item>Power System Analysis</item>
+        <item>Micro Processors and Micro controllers</item>
+        <item>Power Electronic Controllers and Drives</item>
+        <item>Unix and Shell Programming</item>
+        <item>OOPS Through JAVA</item>
+        <item>VLSI Design</item>
+        <item>Robotics</item>
+        <item>Neural Networks and Fuzzy Logic</item>
+        <item>Power System Operation and Control</item>
+        <item>Programmable Logic Controllers and Applications</item>
+        <item>Switchgear and Protection</item>
+        <item>Utilization of Electrical Energy</item>
+        <item>Electrical Distribution Systems</item>
+        <item>HVDC Transmission</item>
+        <item>Flexible Alternating Current Transmission Systems</item>
+        <item>High Voltage Engineering</item>
+    </string-array>
+    <string-array name="MechSubs">
+        <item>Thermodynamics</item>
+        <item>Fluid Mechanics and Hydraulic Machines</item>
+        <item>Computer Aided Engineering Drawing Practice</item>
+        <item>Design of Machine Members</item>
+        <item>Machine Drawing</item>
+        <item>Production Technology</item>
+        <item>Industrial Engineering and Management</item>
+        <item>Operations Research</item>
+        <item>Metal Cutting and Machine Tools</item>
+        <item>Design of Machine Members–II</item>
+        <item>Refrigeration and Air-conditioning</item>
+        <item>Data Base Management System</item>
+        <item>Metrology</item>
+        <item>Heat Transfer</item>
+        <item>Industrial Robotics</item>
+        <item>Green Engineering Systems</item>
+        <item>Mechatronics</item>
+        <item>Gas Dynamics and Jet Propulsion</item>
+    </string-array>
+    <string-array name="PharmacySubs">
+        <item>Microbiology</item>
+        <item>Pharmaceutical Chemistry-1</item>
+        <item>Anatomy/Physiology</item>
+        <item>Pharmaceutical Chemistry-2</item>
+        <item>Biochemistry</item>
+        <item>Forensic Pharmacy</item>
+        <item>Physical Pharmacy</item>
+        <item>Pharmaceutical Chemistry-3</item>
+        <item>Pharmacognosy-1</item>
+        <item>Biotechnology</item>
+        <item>Hospital/Clinical Pharmacy</item>
+        <item>Pharmacokinetics</item>
+        <item>Pharmaceutical Analysis</item>
+        <item>Pharmacotherapy</item>
+        <item>Industrial Management/Marketing</item>
+        <item>Pharmaceutical Chemistry(Natural Products)</item>
+        <item>Manufacturing Practices/Validation</item>
+        <item>Modern Toxicology</item>
+        <item>Human Anatomy/Physiology</item>
+        <item>Quality Assurance</item>
+        <item>Practice workbook</item>
+    </string-array>
+</resources>
