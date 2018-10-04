@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/colorPrimaryDark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="64.0sp" n1:textColor="@color/colorAccent" n1:id="@id/textView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="193.0dip" n1:text="Britrix" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/white" n1:id="@id/textView2" n1:paddingLeft="3.0dip" n1:paddingRight="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="93.0dip" n1:text="a product from " n1:layout_alignParentBottom="true" n1:layout_alignStart="@id/textView" />
+    <TextView n1:textSize="19.0sp" n1:textStyle="bold|italic" n1:textColor="@color/colorAccent" n1:id="@id/textView3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="TRIX" n1:layout_alignTop="@id/textView2" n1:layout_alignEnd="@id/textView" />
+    <TextView n1:textColor="@color/colorAccent" n1:id="@id/textView4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Copyright © All Rights Reserved." n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <ProgressBar n1:id="@id/progressBar2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="51.0dip" n1:layout_below="@id/textView" n1:layout_centerHorizontal="true" style="?android:progressBarStyle" />
+</RelativeLayout>

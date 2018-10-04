@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/main_appBar" layout="@layout/app_bar_layout" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/main_appBar">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="20.0dip" n1:layout_below="@id/main_appBar" n1:layout_alignParentStart="true">
+            <android.support.v7.widget.CardView n1:id="@id/beg" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_marginTop="43.0dip" n1:layout_below="@id/main_appBar" n1:layout_marginStart="27.0dip" n1:layout_alignParentStart="true">
+                <ImageView n1:id="@id/imageView2" n1:layout_width="wrap_content" n1:layout_height="150.0dip" n2:srcCompat="@drawable/books" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView9" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="160.0dip" n1:text="Beginners" />
+                <TextView n1:id="@id/textView10" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="184.0dip" n1:text="Get ready to dirt your hands with all the basics." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/pharm" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_alignTop="@id/beg" n1:layout_marginEnd="27.0dip" n1:layout_alignParentEnd="true">
+                <ImageView n1:id="@id/imageView3" n1:layout_width="wrap_content" n1:layout_height="155.0dip" n3:srcCompat="@drawable/pharm" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView11" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="165.0dip" n1:text="Pharmacy" />
+                <TextView n1:id="@id/textView12" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="188.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/cse" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_marginTop="19.0dip" n1:layout_below="@id/beg" n1:layout_alignStart="@id/beg">
+                <ImageView n1:id="@id/imageView4" n1:layout_width="wrap_content" n1:layout_height="150.0dip" n4:srcCompat="@drawable/cse" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView13" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="155.0dip" n1:text="Computers/IT" />
+                <TextView n1:id="@id/textView14" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="180.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/ece" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_alignTop="@id/cse" n1:layout_alignStart="@id/pharm">
+                <ImageView n1:id="@id/imageView5" n1:layout_width="wrap_content" n1:layout_height="150.0dip" n5:srcCompat="@drawable/ece" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView15" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="155.0dip" n1:text="Electronics" />
+                <TextView n1:id="@id/textView16" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="180.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/eee" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_marginTop="19.0dip" n1:layout_below="@id/cse" n1:layout_alignStart="@id/cse">
+                <ImageView n1:id="@id/imageView6" n1:layout_width="150.0dip" n1:layout_height="150.0dip" n6:srcCompat="@drawable/eee" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView17" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="155.0dip" n1:text="Electrical" />
+                <TextView n1:id="@id/textView18" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="180.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/mech" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_alignTop="@id/eee" n1:layout_alignStart="@id/ece">
+                <ImageView n1:id="@id/imageView7" n1:layout_width="160.0dip" n1:layout_height="150.0dip" n7:srcCompat="@drawable/mec" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView19" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="155.0dip" n1:text="Mechanical" />
+                <TextView n1:id="@id/textView20" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="180.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:id="@id/civil" n1:layout_width="150.0dip" n1:layout_height="250.0dip" n1:layout_marginTop="19.0dip" n1:layout_below="@id/eee" n1:layout_alignStart="@id/eee">
+                <ImageView n1:id="@id/imageView8" n1:layout_width="wrap_content" n1:layout_height="166.0dip" n8:srcCompat="@drawable/civil" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="?colorError" n1:id="@id/textView21" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="170.0dip" n1:text="Civil" />
+                <TextView n1:id="@id/textView22" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="189.0dip" n1:text="Its time for you push your skills with research." n1:textAlignment="textStart" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

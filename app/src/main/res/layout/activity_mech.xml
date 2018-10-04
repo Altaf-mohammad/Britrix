@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <WebView n1:id="@id/webmech" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <include n1:id="@id/mech_appBar" layout="@layout/app_bar_layout" />
+    <com.google.android.gms.ads.AdView n1:id="@id/mechadView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/mech_appBar" n1:layout_centerHorizontal="true" n2:adSize="BANNER" n2:adUnitId="ca-app-pub-4906489236115501/1474612865" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ListView n1:id="@id/mechlist" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/mechadView" n1:layout_alignParentStart="true" />
+</RelativeLayout>

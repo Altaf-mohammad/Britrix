@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/colorPrimaryDark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.google.android.gms.common.SignInButton n1:id="@id/googleBtn" n1:background="@drawable/common_google_signin_btn_icon_dark_normal" n1:layout_width="190.0dip" n1:layout_height="wrap_content" n1:layout_marginBottom="37.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    <ImageView n1:id="@id/imageView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/textView6" n1:layout_alignStart="@id/textView6" n2:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textSize="64.0sp" n1:textColor="@color/colorAccent" n1:id="@id/textView5" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="42.0dip" n1:text="Britrix" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@color/colorAccent" n1:id="@id/textView6" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="32.0dip" n1:text="Authenticate Britrix with your existing  " n1:layout_below="@id/textView5" n1:layout_centerHorizontal="true" n1:textAllCaps="false" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@color/colorAccent" n1:id="@id/textView7" n1:layout_width="250.0dip" n1:layout_height="wrap_content" n1:text="Google account you are just one step ahead" n1:layout_below="@id/textView6" n1:layout_toEndOf="@id/imageView" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/white" n1:id="@id/textView2" n1:paddingLeft="3.0dip" n1:paddingRight="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="73.0dip" n1:text="a product from " n1:layout_above="@id/googleBtn" n1:layout_alignEnd="@id/textView5" />
+    <TextView n1:textSize="19.0sp" n1:textStyle="bold|italic" n1:textColor="@color/colorAccent" n1:id="@id/textView3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="TRIX" n1:layout_alignTop="@id/textView2" n1:layout_toEndOf="@id/textView2" />
+    <TextView n1:textColor="@color/colorAccent" n1:id="@id/textView4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Copyright © All Rights Reserved." n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

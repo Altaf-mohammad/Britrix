@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/us_appBar" layout="@layout/app_bar_layout" />
+    <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/circleImageView2" n1:layout_width="170.0dip" n1:layout_height="170.0dip" n1:layout_marginTop="29.0dip" n1:src="@drawable/afr" n1:layout_below="@id/textView8" n1:layout_centerHorizontal="true" />
+    <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/circleImageView" n1:layout_width="170.0dip" n1:layout_height="170.0dip" n1:layout_marginTop="19.0dip" n1:src="@drawable/aaa" n1:layout_below="@id/us_appBar" n1:layout_alignStart="@id/circleImageView2" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/black" n1:id="@id/textView8" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Founder/Creator : Altaf" n1:layout_below="@id/circleImageView" n1:layout_alignEnd="@id/circleImageView" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/black" n1:id="@id/textView24" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Co-Founder : Afrose" n1:layout_below="@id/circleImageView2" n1:layout_alignStart="@id/circleImageView2" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/black" n1:id="@id/textView26" n1:layout_width="250.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="&quot;Carrying a bag full of books dosen't make sense how do you study&quot;" n1:layout_below="@id/textView24" n1:layout_centerHorizontal="true" n1:textAlignment="center" />
+    <TextView n1:textSize="18.0sp" n1:textColor="@android:color/black" n1:id="@id/textView27" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="- Altaf" n1:layout_below="@id/textView26" n1:textAlignment="center" n1:layout_alignEnd="@id/textView26" />
+</RelativeLayout>
