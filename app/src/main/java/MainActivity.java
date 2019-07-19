@@ -1,173 +1,123 @@
-package com.trix.altaf.britrix_trixera;
+package android.com.britrix;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.C0552c;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.FrameLayout;
+
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-public class MainActivity extends C0552c {
-    /* renamed from: l */
-    private FirebaseAuth f8905l;
-    /* renamed from: m */
-    private Toolbar f8906m;
-    /* renamed from: n */
-    private CardView f8907n;
-    /* renamed from: o */
-    private CardView f8908o;
-    /* renamed from: p */
-    private CardView f8909p;
-    /* renamed from: q */
-    private CardView f8910q;
-    /* renamed from: r */
-    private CardView f8911r;
-    /* renamed from: s */
-    private CardView f8912s;
-    /* renamed from: t */
-    private CardView f8913t;
+public class MainActivity extends AppCompatActivity {
 
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$1 */
-    class C15011 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8898a;
+    private BottomNavigationView mainbottomnav;
+    private FrameLayout mainframe;
+    private ExploreFragment exploreFragment;
+    private SettingsFragment settingsFragment;
 
-        C15011(MainActivity mainActivity) {
-            this.f8898a = mainActivity;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+
+        if(!isConnected(MainActivity.this)){
+
+            buildDialog(MainActivity.this).show();
+        }
+        else {
+
         }
 
-        public void onClick(View view) {
-            this.f8898a.startActivity(new Intent(this.f8898a, BegActivity.class));
-        }
+        mainbottomnav = (BottomNavigationView)findViewById(R.id.mainbottomnav);
+        mainframe = (FrameLayout)findViewById(R.id.mainframe);
+
+        exploreFragment = new ExploreFragment();
+        settingsFragment = new SettingsFragment();
+
+        setFragment(exploreFragment);
+        mainbottomnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.nav_explore:
+
+                        setFragment(exploreFragment);
+                        return true;
+
+
+                    case R.id.nav_settings:
+
+                        setFragment(settingsFragment);
+                        return true;
+
+                    default:
+
+                        return false;
+                }
+            }
+        });
     }
 
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$2 */
-    class C15022 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8899a;
 
-        C15022(MainActivity mainActivity) {
-            this.f8899a = mainActivity;
-        }
+    private void setFragment(Fragment fragment) {
 
-        public void onClick(View view) {
-            this.f8899a.startActivity(new Intent(this.f8899a, PharmActivity.class));
-        }
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.mainframe, fragment);
+        fragmentTransaction.commit();
     }
 
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$3 */
-    class C15033 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8900a;
 
-        C15033(MainActivity mainActivity) {
-            this.f8900a = mainActivity;
-        }
 
-        public void onClick(View view) {
-            this.f8900a.startActivity(new Intent(this.f8900a, cseActivity.class));
-        }
+
+    public boolean isConnected(Context context) {
+
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netinfo = cm.getActiveNetworkInfo();
+
+        if (netinfo != null && netinfo.isConnectedOrConnecting()) {
+            android.net.NetworkInfo wifi = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+            android.net.NetworkInfo mobile = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+
+            if((mobile != null && mobile.isConnectedOrConnecting()) || (wifi != null && wifi.isConnectedOrConnecting())) return true;
+            else
+                return false;
+        } else
+            return false;
     }
 
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$4 */
-    class C15044 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8901a;
+    public AlertDialog.Builder buildDialog(Context c) {
 
-        C15044(MainActivity mainActivity) {
-            this.f8901a = mainActivity;
-        }
+        AlertDialog.Builder builder = new AlertDialog.Builder(c);
+        builder.setTitle("No Internet Connection");
+        builder.setMessage("You need to have Mobile Data or wifi to access this. Press ok to Exit");
+        builder.setCancelable(false);
+        this.setFinishOnTouchOutside(false);
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 
-        public void onClick(View view) {
-            this.f8901a.startActivity(new Intent(this.f8901a, eceActivity.class));
-        }
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                finish();
+            }
+        });
+
+        return builder;
     }
 
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$5 */
-    class C15055 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8902a;
 
-        C15055(MainActivity mainActivity) {
-            this.f8902a = mainActivity;
-        }
-
-        public void onClick(View view) {
-            this.f8902a.startActivity(new Intent(this.f8902a, eeeActivity.class));
-        }
-    }
-
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$6 */
-    class C15066 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8903a;
-
-        C15066(MainActivity mainActivity) {
-            this.f8903a = mainActivity;
-        }
-
-        public void onClick(View view) {
-            this.f8903a.startActivity(new Intent(this.f8903a, mechActivity.class));
-        }
-    }
-
-    /* renamed from: com.trix.altaf.britrix_trixera.MainActivity$7 */
-    class C15077 implements OnClickListener {
-        /* renamed from: a */
-        final /* synthetic */ MainActivity f8904a;
-
-        C15077(MainActivity mainActivity) {
-            this.f8904a = mainActivity;
-        }
-
-        public void onClick(View view) {
-            this.f8904a.startActivity(new Intent(this.f8904a, civilActivity.class));
-        }
-    }
-
-    protected void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-        setContentView((int) R.layout.activity_main);
-        this.f8905l = FirebaseAuth.getInstance();
-        this.f8906m = (Toolbar) findViewById(R.id.main_appBar);
-        m2574a(this.f8906m);
-        m2580h().mo481a((CharSequence) "Britrix");
-        this.f8907n = (CardView) findViewById(R.id.beg);
-        this.f8908o = (CardView) findViewById(R.id.pharm);
-        this.f8909p = (CardView) findViewById(R.id.cse);
-        this.f8910q = (CardView) findViewById(R.id.ece);
-        this.f8911r = (CardView) findViewById(R.id.eee);
-        this.f8912s = (CardView) findViewById(R.id.mech);
-        this.f8913t = (CardView) findViewById(R.id.civil);
-        this.f8907n.setOnClickListener(new C15011(this));
-        this.f8908o.setOnClickListener(new C15022(this));
-        this.f8909p.setOnClickListener(new C15033(this));
-        this.f8910q.setOnClickListener(new C15044(this));
-        this.f8911r.setOnClickListener(new C15055(this));
-        this.f8912s.setOnClickListener(new C15066(this));
-        this.f8913t.setOnClickListener(new C15077(this));
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        if (menuItem.getItemId() == R.id.action_rate) {
-            startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://play.google.com/store/apps/details?id=com.trix.altaf.britrix_trixera&hl=enhttps://play.google.com/store/apps/details?id=com.trix.altaf.britrix_trixera&hl=en")));
-        }
-        if (menuItem.getItemId() == R.id.action_about) {
-            startActivity(new Intent(this, Help.class));
-        }
-        if (menuItem.getItemId() == R.id.action_info) {
-            startActivity(new Intent(this, AboutUs.class));
-        }
-        return super.onOptionsItemSelected(menuItem);
-    }
 }
